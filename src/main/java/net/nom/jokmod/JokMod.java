@@ -27,6 +27,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nom.jokmod.block.ModBlocks;
+import net.nom.jokmod.item.ModCreateModesTabs;
 import net.nom.jokmod.item.ModItem;
 import org.slf4j.Logger;
 
@@ -46,6 +47,8 @@ public class JokMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreateModesTabs.register(modEventBus);
 
         ModItem.register(modEventBus);
         ModBlocks.register(modEventBus);
