@@ -26,6 +26,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.nom.jokmod.block.ModBlocks;
 import net.nom.jokmod.item.ModItem;
 import org.slf4j.Logger;
 
@@ -47,6 +48,7 @@ public class JokMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItem.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -62,6 +64,10 @@ public class JokMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItem.MISRITE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModBlocks.MIS_BLOCK);
         }
     }
 
