@@ -43,9 +43,9 @@ public class ModItem {
     public static final RegistryObject<Item> METAL_CHARM_AXE = ITEMS.register("metal_charm_axe",
             () -> new AxeItem(ModToolTiers.METAL_CHARM_INGOT, new Item.Properties()
                     .attributes(AxeItem.createAttributes(ModToolTiers.METAL_CHARM_INGOT, 8, -3.2f))));
-//    public static final RegistryObject<Item> METAL_CHARM_HOE = ITEMS.register("metal_charm_hoe",
-//            () -> new HoeItem(ModToolTiers.METAL_CHARM_INGOT, new Item.Properties()
-//                    .attributes(HoeItem.createAttributes(ModToolTiers.METAL_CHARM_INGOT, 0, -3.0f))));
+    public static final RegistryObject<Item> METAL_CHARM_HOE = ITEMS.register("metal_charm_hoe",
+            () -> new HoeItem(ModToolTiers.METAL_CHARM_INGOT, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.METAL_CHARM_INGOT, 1, -3.0f))));
 
 
 

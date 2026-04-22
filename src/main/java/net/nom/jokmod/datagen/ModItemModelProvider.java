@@ -28,6 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItem.METAL_CHARM_PICKAXE);
         handheldItem(ModItem.METAL_CHARM_SHOVEL);
         handheldItem(ModItem.METAL_CHARM_AXE);
+        handheldItem(ModItem.METAL_CHARM_HOE);
     }
 
 
