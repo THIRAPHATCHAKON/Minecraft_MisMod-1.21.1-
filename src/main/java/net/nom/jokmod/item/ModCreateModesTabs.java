@@ -27,7 +27,7 @@ public class ModCreateModesTabs {
                         output.accept(ModItem.METAL_CHARM_AXE.get());
                         output.accept(ModItem.METAL_CHARM_SWORD.get());
                         output.accept(ModItem.METAL_CHARM_SHOVEL.get());
-//                        output.accept(ModItem.METAL_CHARM_HOE.get());
+                        output.accept(ModItem.METAL_CHARM_HOE.get());
                         output.accept(ModItem.RAW_METAL_CHARM.get());
                     }).build());
 
